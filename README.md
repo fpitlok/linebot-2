@@ -23,8 +23,9 @@ https://medium.com/linedevth/%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97%E0%B8
   
 4. AMP Stack ต่างๆ ตามที่ถนัด ( ชุดของ software ที่ประกอบด้วย Apache, MySQL และ PHP) ใช้สำหรับทำให้คอมพิวเตอร์ส่วนตัวของเราทำหน้าที่เป็น Web Server ได้ 
   แนะนำ Xampp หรือ Appserv
-    - Xampp
+  
+  Xampp
   >>> https://www.apachefriends.org/download.html
-    - Appserv
+  Appserv
   >>> https://www.appserv.org/en/download/
   
