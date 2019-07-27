@@ -5,6 +5,8 @@
   >>> https://developers.line.biz
 2. LINE@ ใช้สำหรับจัดการ Rich menu รวมถึงการตั้งค่าอื่นๆ
   >>> https://at.line.me/th/
+3. Dialogflow by Google เครื่องมือหลักในการเขียน Chatbot
+  >>> https://dialogflow.com/
   
 # การสร้าง Bot เบื้องต้น (แนะนำให้อ่าน)
 https://medium.com/linedevth/%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-line-bot-b2cb90643901
@@ -30,3 +32,5 @@ https://medium.com/linedevth/%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97%E0%B8
   Appserv
   >>> https://www.appserv.org/en/download/
   
+5. Code editor ต่างๆ ตามที่ถนัด (แนะนำ VS code)
+  >>> https://code.visualstudio.com/
