@@ -18,3 +18,15 @@ https://medium.com/linedevth/%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97%E0%B8
 2. LINE Rich Menu Maker ใช้สำหรับสร้าง Rich Menu อย่างง่ายบนเว็ปไซต์
   >>> https://lineforbusiness.com/richmenumaker/
   
+3. Ngrok คือ tools ที่ช่วยให้คนทั่วไป สามารถเข้าใช้งานเว็บหรือแอพพลิเคชั่นของเรา ผ่านเครื่องที่รันอยู่บน localhost (ทำให้สามารถใช้คอมพิวเตอร์ส่วนตัวทดสอบกับ LINE Bot ได้ รองรับ https)
+  >>> https://ngrok.com/download
+  
+4. AMP Stack ต่างๆ ตามที่ถนัด ( ชุดของ software ที่ประกอบด้วย Apache, MySQL และ PHP) ใช้สำหรับทำให้คอมพิวเตอร์ส่วนตัวของเราทำหน้าที่เป็น Web Server ได้ 
+  แนะนำ Xampp หรือ Appserv
+  
+  Xampp
+  >>> https://www.apachefriends.org/download.html
+  
+  Appserv
+  >>> https://www.appserv.org/en/download/
+  
