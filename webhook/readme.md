@@ -3,6 +3,8 @@
 
 # รายละเอียด Webhook แต่ละ Lab
 
-> lab 1 ดัก Request ที่ได้จาก Dialogflow Fulfillment webhook และเก็บค่าลงในไฟล์ txt
+> lab 1 ดัก Request ที่ได้จาก Dialogflow Fulfillment Webhook และเก็บค่าลงในไฟล์ txt
 
 > lab 2 ตอบกลับข้อความไปยัง Dialogflow
+
+> lab 3 ตอบกลับข้อความตาม Action ที่ส่งมาจาก Dialogflow Fulfillment Webhook
