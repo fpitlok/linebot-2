@@ -1,5 +1,5 @@
 # LINE Bot PHP
 
 # ตั้งค่าเบื้องต้น
- > ใส่ channel access token ที่ /src/config.php
- > ชี้ Webhook มาที่ไฟล์ main.php
+ >>> ใส่ channel access token ที่ /src/config.php
+ >>> ชี้ Webhook มาที่ไฟล์ main.php
