@@ -8,3 +8,6 @@
 > lab 2 ตอบกลับข้อความไปยัง Dialogflow
 
 > lab 3 ตอบกลับข้อความตาม Action ที่ส่งมาจาก Dialogflow Fulfillment Webhook
+
+> lab 4-5 ทดลองตอบกลับข้อความโดยดึงข่าวจาก RSS 
+
