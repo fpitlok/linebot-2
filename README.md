@@ -34,3 +34,8 @@ https://medium.com/linedevth/%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97%E0%B8
   
 5. Code editor ต่างๆ ตามที่ถนัด (แนะนำ VS code)
      > https://code.visualstudio.com/
+
+---------------------------------------------------------------
+
+# Rich Menu API (เพิ่มเติมสำหรับคนที่สนใจ)
+https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38
