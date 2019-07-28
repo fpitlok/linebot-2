@@ -6,7 +6,7 @@ include "src/config.php";
 
 
 if ($botText == 'ทดสอบ') {
-    $text = 'ทดสอบ Format Text 2';
+    $text = 'ทดสอบตอบกลับข้อความ';
     sendFormatTextMessage($LINEDatas, $replyToken, $text);
 }
 
