@@ -2,7 +2,7 @@
 
 # ลิ้งค์สำคัญที่ต้องรู้
 1. LINE Developers ใช้สำหรับสร้างและตั้งค่า LINE Bot ** สำคัญมาก
-  >>> https://developers.line.biz
+      > https://developers.line.biz
 2. LINE@ ใช้สำหรับจัดการ Rich menu รวมถึงการตั้งค่าอื่นๆ
   >>> https://at.line.me/th/
 3. Dialogflow by Google เครื่องมือหลักในการเขียน Chatbot
