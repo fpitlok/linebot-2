@@ -5,3 +5,7 @@
 ------------------------------------------------------------------------
 # แนะนำโปรแกรม Postman สำหรับทดสอบ LINE Notify
   > https://www.getpostman.com/downloads/
+-----------------------------------------------------------------------
+
+# ตัวอย่าง LINE Notify ด้วย PHP
+  > https://www.youtube.com/watch?v=yVS3XCCiS7Q
