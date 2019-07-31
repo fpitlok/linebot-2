@@ -9,3 +9,6 @@
 
 # ตัวอย่าง LINE Notify ด้วย PHP
   > https://www.youtube.com/watch?v=yVS3XCCiS7Q
+
+# ตัวอย่าง Curl ด้วย LIne Notify
+  > curl -X POST -H 'Authorization: Bearer [accessToken]' -F 'message=[message]' https://notify-api.line.me/api/notify
