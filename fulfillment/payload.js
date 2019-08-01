@@ -3,7 +3,7 @@
 'use strict';
  
 const functions = require('firebase-functions');
-const {WebhookClient} = require('dialogflow-fulfillment');
+const {WebhookClient, Payload} = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
  
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
@@ -22,13 +22,16 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`I'm sorry, can you try again?`);
   }
   
-  function bmicalculate (agent) {
-   	let weight = request.body.queryResult.parameters.weight;
-    let height = request.body.queryResult.parameters.height / 100;
-	let bmi = (weight / (height * height)).toFixed(2);
-    
-    agent.add(bmi);
-  }
+
+	
+function payloadLine (agent) {
+	let payload_line = {
+		// json จาก line bot designer
+	};
+	
+	let payload = new Payload('LINE', payload_line, { sendAsMessage: true });
+	agent.add(payload);
+}
 
   // // Uncomment and edit to make your own intent handler
   // // uncomment `intentMap.set('your intent name here', yourFunctionHandler);`
@@ -63,7 +66,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);  
-  intentMap.set('call - custom - yes', bmicalculate);
+  intentMap.set('call - custom - yes', payloadLine);
 
   // intentMap.set('your intent name here', yourFunctionHandler);
   // intentMap.set('your intent name here', googleAssistantHandler);
