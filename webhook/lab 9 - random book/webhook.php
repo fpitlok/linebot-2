@@ -69,4 +69,3 @@ if (isset($update["queryResult"]["action"])) {
 }
 
 ?>
-?>
