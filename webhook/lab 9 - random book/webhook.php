@@ -5,9 +5,9 @@ include_once('db.php');
 
 
 function processMessage($update) {
-    if($update["queryResult"]["action"] == "random"){
+    if($update["queryResult"]["action"] == "สุ่มนิยาย"){
         $db = new db();
-        $book = $db->query("SELECT * FROM `book` ORDER BY RAND() LIMIT 1")->find();
+        $book = $db->query("SELECT * FROM `book` WHERE = 'นิยาย' ORDER BY RAND() LIMIT 1")->find();
         sendMessage(array(
             "source" => $update["responseId"],
             "fulfillmentText"=> $book->name,
