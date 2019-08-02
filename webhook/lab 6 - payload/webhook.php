@@ -23,12 +23,19 @@ function processMessage($update) {
                 }
             }
         }';
+        
+       $json2 = '{
+  "type": "image",
+  "originalContentUrl": "https://pbs.twimg.com/media/DUYM0-_VMAEcN14.jpg",
+  "previewImageUrl": "https://pbs.twimg.com/media/DUYM0-_VMAEcN14.jpg",
+  "animated": false
+}';
 
         $payload = '{
             "fulfillmentMessages" : [
                 {
                     "payload": {
-                        "line": '.$json.',
+                        "line": '.$json2.',
                     "platform" : "LINE"
                 }
             ]
