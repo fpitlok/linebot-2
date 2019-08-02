@@ -2,47 +2,25 @@
 function processMessage($update) {
     if($update["queryResult"]["action"] == "payload"){
         
-        $json = '{
-            "type": "template",
-            "altText": "this is a confirm template",
-            "template": {
-                "type": "confirm",
-                "actions": [
-                    {
-                        "type": "message",
-                        "label": "Yes",
-                        "text": "Yes"
-                    },
-                    {
-                        "type": "message",
-                        "label": "No",
-                        "text": "No"
-                        }
-                ],
-                "text": "Continue?"
-                }
-            }
+       $json = '{
+          "type": "image",
+          "originalContentUrl": "https://pbs.twimg.com/media/DUYM0-_VMAEcN14.jpg",
+          "previewImageUrl": "https://pbs.twimg.com/media/DUYM0-_VMAEcN14.jpg",
+          "animated": false
         }';
         
-       $json2 = '{
-  "type": "image",
-  "originalContentUrl": "https://pbs.twimg.com/media/DUYM0-_VMAEcN14.jpg",
-  "previewImageUrl": "https://pbs.twimg.com/media/DUYM0-_VMAEcN14.jpg",
-  "animated": false
-}';
-
         $payload = '{
             "fulfillmentMessages" : [
                 {
                     "payload": {
-                        "line": '.$json2.',
+                        "line": 
+                            '.$json.'
+                        },
                     "platform" : "LINE"
                 }
             ]
         }';
-
         echo $payload;
-
     }  else {
         sendMessage(array(
             "source" => $update["responseId"],
@@ -61,11 +39,9 @@ function processMessage($update) {
         
     }
 }
-
 function sendMessage($parameters) {
     echo json_encode($parameters);
 }
-
 $update_response = file_get_contents("php://input");
 $update = json_decode($update_response, true);
 if (isset($update["queryResult"]["action"])) {
@@ -90,6 +66,4 @@ if (isset($update["queryResult"]["action"])) {
         
     ));
 }
-
-
 ?>
