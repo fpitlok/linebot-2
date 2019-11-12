@@ -1,0 +1,29 @@
+{
+    "responseId": "...",
+    "queryResult": {
+        "queryText": "next%",
+        "parameters": {
+            "product": "Nike ZoomX Vaporfly NEXT%"
+        },
+        "allRequiredParamsPresent": true,
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+                    ]
+                }
+            }
+        ],
+        "intent": {
+            "name": "projects/sheet-chatbot-unfjpc/agent/intents/74d5284b-e57f-455e-a3ba-fcf7b8439239",
+            "displayName": "Ask for price"
+        },
+        "intentDetectionConfidence": 1,
+        "languageCode": "th"
+    },
+    "originalDetectIntentRequest": {
+        "payload": {}
+    },
+    "session": "..."
+}
