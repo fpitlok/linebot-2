@@ -1,7 +1,7 @@
 {
     "responseId": "...",
     "queryResult": {
-        "queryText": "next%",
+        "queryText": "มอคค่า",
         "parameters": {
             "menu": "กาแฟ",
             "price": "50"
