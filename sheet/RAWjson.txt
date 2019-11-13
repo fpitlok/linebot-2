@@ -3,7 +3,8 @@
     "queryResult": {
         "queryText": "next%",
         "parameters": {
-            "product": "Nike ZoomX Vaporfly NEXT%"
+            "menu": "กาแฟ",
+            "price": "50"
         },
         "allRequiredParamsPresent": true,
         "fulfillmentMessages": [
