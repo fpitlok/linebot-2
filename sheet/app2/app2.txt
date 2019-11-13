@@ -1,0 +1,36 @@
+var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1STE4UzH3ua3_PTi81bhRJg-NAJIv6oDTr9ioDgdtDD8/edit");
+var sheet = ss.getSheetByName("sheet1");
+function doPost(e) {
+   
+  var data = JSON.parse(e.postData.contents)
+  var userMsg = data.queryResult.queryText;
+  var values = sheet.getRange(2, 1, sheet.getLastRow(),sheet.getLastColumn()).getValues();
+  var lrow = sheet.getLastRow();
+  var lcol = sheet.getLastColumn();
+  
+  sheet.insertRows(lrow+1, 1);
+  sheet.getRange(lrow+1, 1, 1, 2).setValues([[
+    'แมคคิอาโต้', '55'
+  ]]);
+  
+  var result = {
+    fulfillmentText: 'ข้อความที่จะตอบกลับแบบปกติ',
+    fulfillmentMessages: [
+      {
+        platform: 'line',
+        type: 4,
+        payload: {
+          line: {
+            type: 'text',
+            text: 'เพิ่มข้อมูลแล้ว'
+          }
+        }
+      }
+    ]
+  }
+  
+    var replyJSON = ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
+    return replyJSON;
+
+  
+}
