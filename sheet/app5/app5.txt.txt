@@ -1,0 +1,45 @@
+var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1STE4UzH3ua3_PTi81bhRJg-NAJIv6oDTr9ioDgdtDD8/edit");
+var sheet = ss.getSheetByName("sheet1");
+function doPost(e) {
+   
+  var data = JSON.parse(e.postData.contents)
+  var userMsg = data.queryResult.queryText;
+  var par = data.queryResult.parameters;
+  var values = sheet.getRange(2, 1, sheet.getLastRow(),sheet.getLastColumn()).getValues();
+  var lrow = sheet.getLastRow();
+  var lcol = sheet.getLastColumn();
+  
+ 
+    
+    for(var i = 0;i<values.length; i++){
+      
+      if(values[i][0] == par.menu ){
+        i=i+2;
+        sheet.deleteRow(i);
+        
+        var res = 'ลบข้อมูลเรียบร้อยแล้ว';
+      }
+    }
+
+      
+  var result = {
+    fulfillmentText: 'ข้อความที่จะตอบกลับแบบปกติ',
+    fulfillmentMessages: [
+      {
+        platform: 'line',
+        type: 4,
+        payload: {
+          line: {
+            type: 'text',
+            text: res
+          }
+        }
+      }
+    ]
+  }
+  
+    var replyJSON = ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
+    return replyJSON;
+
+  
+}
