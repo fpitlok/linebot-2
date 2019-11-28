@@ -17,6 +17,9 @@
       
 5. LINE Sticker 
       > https://devdocs.line.me/files/sticker_list.pdf
+      
+6. Rich Menu Maker
+      > https://lineforbusiness.com/richmenumaker/
   
 # การสร้าง Bot เบื้องต้น (แนะนำให้อ่าน)
 https://medium.com/linedevth/%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-line-bot-b2cb90643901
